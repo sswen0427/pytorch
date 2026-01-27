@@ -75,6 +75,12 @@ print('Test computation:', torch.tensor([1,2,3]) + torch.tensor([4,5,6]))
 "
 ```
 
+# Debug All CPP Code
+```
+rm -rf build
+DEBUG=1 BUILD_TEST=1 python setup.py build
+```
+
 # Tips
 ```
 # clean DNS dirty cache, execute it when download failed
