@@ -42,19 +42,37 @@ print('Test computation:', torch.tensor([1,2,3]) + torch.tensor([4,5,6]))
 "
 ```
 
-# Build Pytorch from Source
+# Build Pytorch for MacOS from source code
 
 ```
+# The following commands were tested on my MacBook Pro with M1 chip.
+# Step1: Create a conda environment
+conda create -n test python=3.10
+conda activate test
+
+# Step2: Clone Pytorch source code
 git clone https://gitee.com/sswen427/pytorch.git
 git submodule sync
 git submodule update --init --recursive
-
-conda create -n test python=3.10
-conda activate test
 pip install -r requirements.txt
 
-export USE_CUDA=0
+# Step3: Build Pytorch
 python setup.py develop
+
+# Step4: Test Pytorch
+python -c "
+import torch
+import sys
+
+print('PyTorch', torch.__version__, 'installed successfully!')
+print('Location:', torch.__file__)
+print('CUDA:', 'Available' if torch.cuda.is_available() else 'Not Available')
+
+if hasattr(torch.backends, 'mps'):
+    print('MPS:', 'Available' if torch.backends.mps.is_available() else 'Not Available')
+
+print('Test computation:', torch.tensor([1,2,3]) + torch.tensor([4,5,6]))
+"
 ```
 
 # Tips
