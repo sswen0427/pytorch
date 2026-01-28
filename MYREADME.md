@@ -75,6 +75,11 @@ print('Test computation:', torch.tensor([1,2,3]) + torch.tensor([4,5,6]))
 "
 ```
 
+# Debug Python Code
+```
+python -m pdb test/autograd/test_functional.py
+```
+
 # Debug All CPP Code
 ```
 rm -rf build
