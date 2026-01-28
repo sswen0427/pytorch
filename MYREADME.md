@@ -101,6 +101,7 @@ lldb c10_Device_test
 b Device_test.cpp:16
 r
 gui
+# gdb uses `layout src` to show the source code
 ```
 
 # Tips
