@@ -75,15 +75,29 @@ print('Test computation:', torch.tensor([1,2,3]) + torch.tensor([4,5,6]))
 "
 ```
 
-# Debug Python Code
+# Debug Python Code on MacOS or Debian
 ```
 python -m pdb test/autograd/test_functional.py
 ```
 
-# Debug All CPP Code
+# Debug All CPP Code on MacOS
 ```
 rm -rf build
 DEBUG=1 BUILD_TEST=1 python setup.py build
+```
+
+# Debug Single CPP Code on MacOS
+```
+git clean -fdx
+mkdir build
+cd build
+cmake -DBUILD_TEST=1 -DCMAKE_BUILD_TYPE=Debug ..
+make c10_Device_test -j16
+cd bin
+lldb c10_Device_test
+b Device_test.cpp:16
+r
+gui
 ```
 
 # Tips
