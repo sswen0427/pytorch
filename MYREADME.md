@@ -78,6 +78,9 @@ print('Test computation:', torch.tensor([1,2,3]) + torch.tensor([4,5,6]))
 # Debug Python Code on MacOS or Debian
 ```
 python -m pdb test/autograd/test_functional.py
+python -m ipdb test/autograd/test_functional.py
+# This one is so powerful
+python -m pudb test/autograd/test_functional.py
 ```
 
 # Debug All CPP Code on MacOS
