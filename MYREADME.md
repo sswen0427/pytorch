@@ -96,7 +96,11 @@ mkdir build
 cd build
 cmake -DBUILD_TEST=1 -DCMAKE_BUILD_TYPE=Debug ..
 make c10_Device_test -j16
+# Debug test_api
+# make test_api -j16
 cd bin
+# Look at all unit tests
+# ./c10_Device_test --gtest_list_tests
 lldb c10_Device_test
 b Device_test.cpp:16
 r
