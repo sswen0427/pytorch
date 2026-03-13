@@ -6610,3 +6610,83 @@ Installing collected packages: torch
   changing mode of /opt/homebrew/anaconda3/envs/test/bin/torchfrtrace to 755
   changing mode of /opt/homebrew/anaconda3/envs/test/bin/torchrun to 755
 Successfully installed torch-2.11.0a0+git8a9a7f5
+
+
+
+
+
+
+
+(test)  🐍 test  wen@macbookpro  ~/test/pytorch   sswen-dev  git clean -fdx                 
+Removing aten/src/ATen/Config.h
+Removing build/
+Removing compile_commands.json
+Removing tools/__pycache__/
+Removing tools/autograd/__pycache__/
+Removing tools/pyi/__pycache__/
+Removing tools/setup_helpers/__pycache__/
+Removing tools/shared/_utils_internal.py
+Removing torch/_C.cpython-310-darwin.so
+Removing torch/_C/_VariableFunctions.pyi
+Removing torch/_C/__init__.pyi
+Removing torch/_C/_nn.pyi
+Removing torch/_VF.pyi
+Removing torch/__pycache__/
+Removing torch/_inductor/kernel/vendored_templates/
+Removing torch/bin/
+Removing torch/csrc/autograd/generated/
+Removing torch/csrc/functionalization/generated/
+Removing torch/csrc/inductor/aoti_torch/generated/c_shim_aten.cpp
+Removing torch/csrc/inductor/aoti_torch/generated/c_shim_cpu.cpp
+Removing torch/csrc/inductor/aoti_torch/generated/c_shim_cuda.cpp
+Removing torch/csrc/inductor/aoti_torch/generated/c_shim_mps.cpp
+Removing torch/csrc/lazy/generated/LazyIr.h
+Removing torch/csrc/lazy/generated/LazyNativeFunctions.cpp
+Removing torch/csrc/lazy/generated/LazyNativeFunctions.h
+Removing torch/csrc/lazy/generated/LazyNonNativeIr.h
+Removing torch/csrc/lazy/generated/RegisterAutogradLazy.cpp
+Removing torch/csrc/lazy/generated/RegisterLazy.cpp
+Removing torch/headeronly/version.h
+Removing torch/include/
+Removing torch/lib/cmake/
+Removing torch/lib/libXNNPACK.a
+Removing torch/lib/libaoti_custom_ops.dylib
+Removing torch/lib/libbackend_with_compiler.dylib
+Removing torch/lib/libc10.dylib
+Removing torch/lib/libclog.a
+Removing torch/lib/libcpuinfo.a
+Removing torch/lib/libfmt.a
+Removing torch/lib/libjitbackend_test.dylib
+Removing torch/lib/libkineto.a
+Removing torch/lib/libkleidiai.a
+Removing torch/lib/libmicrokernels-prod.a
+Removing torch/lib/libnnpack.a
+Removing torch/lib/libprotobuf-lite.a
+Removing torch/lib/libprotobuf.a
+Removing torch/lib/libprotoc.a
+Removing torch/lib/libpthreadpool.a
+Removing torch/lib/libpytorch_qnnpack.a
+Removing torch/lib/libshm.dylib
+Removing torch/lib/libsleef.a
+Removing torch/lib/libtorch.dylib
+Removing torch/lib/libtorch_cpu.dylib
+Removing torch/lib/libtorch_global_deps.dylib
+Removing torch/lib/libtorch_python.dylib
+Removing torch/lib/libtorchbind_test.dylib
+Removing torch/lib/pkgconfig/
+Removing torch/nn/functional.pyi
+Removing torch/return_types.pyi
+Removing torch/share/
+Removing torch/test/
+Removing torch/testing/_internal/generated/annotated_fn_args.py
+Removing torch/utils/benchmark/utils/valgrind_wrapper/callgrind.h
+Removing torch/utils/benchmark/utils/valgrind_wrapper/valgrind.h
+Removing torch/utils/data/datapipes/datapipe.pyi
+Removing torch/version.py
+Removing torchgen/__pycache__/
+Removing torchgen/aoti/__pycache__/
+Removing torchgen/api/__pycache__/
+Removing torchgen/api/types/__pycache__/
+Removing torchgen/dest/__pycache__/
+Removing torchgen/packaged/
+Removing torchgen/selective_build/__pycache__/
